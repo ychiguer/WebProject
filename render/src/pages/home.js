@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../css/home.css';
 import { setup3D } from '../threeJS/homeScript';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 let setup = function () {
   let scrollHandler = function (e) {
@@ -8,21 +9,29 @@ let setup = function () {
     this.oldScroll = this.scrollY;
 
     if (window.scrollY >= window.innerHeight / 100 && window.scrollY < window.innerHeight && !up) {
-      window.scroll({
-        top: window.innerHeight,
-        left: 0,
-        behavior: 'smooth'
-      })
+      scroll_down()
     } else if (window.scrollY <= window.innerHeight * 0.99 && up) {
-      window.scroll({
-        top: -window.scrollY,
-        left: 0,
-        behavior: 'smooth'
-      })
+      scroll_up()
     }
   };
 
   window.onscroll = scrollHandler
+}
+
+let scroll_down = function () {
+  window.scroll({
+    top: window.innerHeight,
+    left: 0,
+    behavior: 'smooth'
+  })
+}
+
+let scroll_up = function () {
+  window.scroll({
+    top: -window.scrollY,
+    left: 0,
+    behavior: 'smooth'
+  })
 }
 
 function Home() {
@@ -32,7 +41,15 @@ function Home() {
     setup3D(mount);
   }, []);
   return (
-    <dev ref={ref => mount = ref}></dev>
+    <dev>
+      <dev className="webgl" ref={ref => mount = ref}>
+        <h1 className="noselect brand">myRide</h1>
+        <h1 id="welcome">Hey buckle up this is</h1>
+        <ExpandMoreIcon id='arrow' className="clickable" onClick={scroll_down} />
+      </dev>
+      <dev className="intro">
+      </dev>
+    </dev>
   );
 }
 
