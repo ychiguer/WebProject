@@ -5,12 +5,13 @@ import Home from './pages/home';
 import Login from './pages/login';
 import SignUp from './pages/signup';
 import About from './pages/about';
-import Navigation from './pages/navigation';
+import NavigationPublic from './pages/navigationPublic';
+import NavigationLogIn from './pages/navigationLogIn';
 
 function App() {
   return (
     <Router>
-    <Navigation/>
+    <NavigationPublic/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/login' element={<Login />} />
