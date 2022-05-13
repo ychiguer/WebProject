@@ -1,8 +1,8 @@
 import React from "react";
-import '../css/navigation.css';
+import '../css/navigationPublic.css';
 import { NavLink } from "react-router-dom";
 
-function Navigation() {
+function NavigationPublic() {
   return (
     <div class="navMenu">
     <NavLink to="/">Home</NavLink>
@@ -14,4 +14,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NavigationPublic;
