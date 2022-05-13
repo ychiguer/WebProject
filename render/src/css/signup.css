@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+body {
+  background: #00000f !important;
+  min-height: 100vh;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 50;
+  font-family: 'Fira Sans', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+}
+h3 {
+    margin-top: 100px;
+    height: 100px;
+}
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 400px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+input {
+    height: 30px;
+    flex: 0 0 200px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+.forgot-password,
+.forgot-password a {
+  text-align: left;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+.forgot-password a {
+  color: #167bff;
+}
+ .container {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    outline: dashed 1px black;
+}
+  
+.child {
+    /* Center horizontally*/
+    margin: 0 auto;
+    display: table;
+}
+.d-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+.form-signup {
+  margin-top: 2000px;
+}
