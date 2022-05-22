@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 
 function NavigationLogIn() {
   return (
-    <div class="navMenu">
+    <div className="navMenu">
     <NavLink to="/">Home</NavLink>
     <NavLink to="/addOffer">Add offer</NavLink>
     <NavLink to="/explore">Explore</NavLink>
     <NavLink to="/settings">Settings</NavLink>
     <NavLink to="/logout">Log out</NavLink>
-    <div class="dot"></div>
+    <div className="dot"></div>
     </div>
   );
 }

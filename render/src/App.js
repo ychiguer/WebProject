@@ -7,6 +7,7 @@ import SignUp from './pages/signup';
 import About from './pages/about';
 import NavigationPublic from './pages/navigationPublic';
 import NavigationLogIn from './pages/navigationLogIn';
+import Cars from './pages/cars';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<SignUp />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/cars" element={<Cars />} />
       </Routes>
     </Router>
   );
