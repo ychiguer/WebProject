@@ -16,6 +16,7 @@
     "dat.gui": "^0.7.9",
     "mdb-react-ui-kit": "^3.0.0",
     "react": "^18.0.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
