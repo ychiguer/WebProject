@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import '../css/home.css';
 import { setup3D } from '../threeJS/homeScript';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import NavigationPublic from './navigationPublic';
+import NavigationLogIn from './navigationLogIn';
+import Intro from './intro';
 
 let setup = function () {
   let scrollHandler = function (e) {
@@ -41,15 +44,17 @@ function Home() {
     setup3D(mount);
   }, []);
   return (
-    <dev>
-      <dev className="webgl" ref={ref => mount = ref}>
+    <div>
+      <div className="webgl" ref={ref => mount = ref}>
         <h1 className="noselect brand">myRide</h1>
         <h1 id="welcome">Hey buckle up this is</h1>
         <ExpandMoreIcon id='arrow' className="clickable" onClick={scroll_down} />
-      </dev>
-      <dev className="intro">
-      </dev>
-    </dev>
+      </div>
+      <div className="intro">
+      <NavigationPublic/>
+      <Intro/>
+      </div>
+    </div>
   );
 }
 
