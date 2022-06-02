@@ -13,7 +13,7 @@ import ScrollTop from './pages/scrollTop';
 function App() {
   return (
     <Router>
-      <NavigationPublic />
+      <ScrollTop />
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/login' element={<Login />} />
