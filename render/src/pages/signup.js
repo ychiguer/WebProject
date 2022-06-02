@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/signup.css';
-export default class SignUp extends Component {
-  render() {
+import { useState } from "react";
+
+export default function SignUp()  {
     return (
         <div class="container">
         <div class="child">
@@ -48,4 +49,3 @@ export default class SignUp extends Component {
       </div></div>
     )
   }
-}

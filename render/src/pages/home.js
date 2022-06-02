@@ -5,6 +5,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import NavigationPublic from './navigationPublic';
 import NavigationLogIn from './navigationLogIn';
 import Intro from './intro';
+import { useState } from "react";
 
 let setup = function () {
   let scrollHandler = function (e) {
@@ -50,7 +51,7 @@ function Home() {
         <h1 id="welcome">Hey buckle up this is</h1>
         <ExpandMoreIcon id='arrow' className="clickable" onClick={scroll_down} />
       </div>
-      <div className="intro">
+      <div className="intro" id="intro">
       <NavigationPublic/>
       <Intro/>
       </div>

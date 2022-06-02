@@ -7,6 +7,7 @@ import Login from './pages/login';
 import SignUp from './pages/signup';
 import Cars from './pages/cars';
 import ScrollTop from './pages/scrollTop';
+import CreateAdd from './pages/createAdd';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/signup' element={<SignUp />} />
         <Route exact path="/about" element={<Intro />} />
         <Route exact path="/cars" element={<Cars />} />
+        <Route exact path="/createAdd" element={<CreateAdd />} />
       </Routes>
     </Router>
   );
