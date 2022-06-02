@@ -8,11 +8,12 @@ import About from './pages/about';
 import NavigationPublic from './pages/navigationPublic';
 import NavigationLogIn from './pages/navigationLogIn';
 import Cars from './pages/cars';
+import ScrollTop from './pages/scrollTop';
 
 function App() {
   return (
     <Router>
-    <NavigationPublic/>
+      <NavigationPublic />
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/login' element={<Login />} />
