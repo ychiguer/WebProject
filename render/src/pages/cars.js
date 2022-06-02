@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/cars.css';
 import { Navigate } from 'react-router-dom';
 
 function Cars() {
@@ -29,13 +30,13 @@ function Cars() {
          {products.map((p) => (
 
             <div key={p.id}>
-               <div className="card" style={{ marginLeft: "380px", marginTop: "100px", width: "35rem", backgroundColor: "white" }}>
+               <div className="card" style={{ marginLeft: "650px", marginTop: "100px", width: "35rem", backgroundColor: "white" }}>
                   <p style={{ marginLeft: "0px" }}> <b> <center>{p.name}</center> </b></p>
                   <center> <img className="card-img-top" style={{ width: "25rem", height: "20rem" }} src={p.photo} alt="Card image cap" /> </center>
                   <div className="card-body">
                      <h5 className="card-title">Nothing</h5>
                      <p className="card-text"><b>Price : {p.price} $ </b> </p>
-                     <center><button className="btn btn-primary" style={{ marginLeft: "0px" }} onClick={() => addItem(p)} >Show more</button> </center>
+                     <center><button className="btn btn-primary" style={{ marginLeft: "0px" }}  >Show more</button> </center>
                   </div>
                </div>
             </div>
