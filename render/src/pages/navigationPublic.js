@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 function NavigationPublic() {
   return (
     <div className="navMenu">
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/signup">Signup</NavLink>
-    <NavLink to="/login">LogIn</NavLink>
-    <NavLink to="/cars">Cars</NavLink>
-    <NavLink to="/about">About</NavLink>
+    <a href="/">Home</a>
+    <a href="/signup">Signup</a>
+    <a href="/login">LogIn</a>
+    <a href="/cars">Cars</a>
+    <a href="/#intro">About</a>
     
     <div className="dot"></div>
     </div>
