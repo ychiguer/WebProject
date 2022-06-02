@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationPublic from 'navigationPublic'
+import NavigationPublic from './navigationPublic'
 
 function Cars() {
 
