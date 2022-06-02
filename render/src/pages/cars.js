@@ -36,7 +36,7 @@ function Cars() {
                   <div className="card-body">
                      <h5 className="card-title">Nothing</h5>
                      <p className="card-text"><b>Price : {p.price} $ </b> </p>
-                     <center><button className="btn btn-primary" style={{ marginLeft: "0px" }} onClick={() => addItem(p)} >Show more</button> </center>
+                     <center><button className="btn btn-primary" style={{ marginLeft: "0px" }} >Show more</button> </center>
                   </div>
                </div>
             </div>
