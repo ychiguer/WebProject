@@ -2,12 +2,12 @@ import React from 'react';
 import { useState } from "react";
 import NavigationPublic from './navigationPublic'
 
-function Cars() {
+function Cars([user, setUser]) {
 
    const products = [
       {
          id: 1,
-         name: "Chevrolet Impala",
+         name: { user },
          price: 9900,
          photo: "https://upload.wikimedia.org/wikipedia/commons/0/01/2019_Chevrolet_Malibu_%28facelift%29_LT%2C_front_10.19.19.jpg"
       },

@@ -8,18 +8,23 @@ import SignUp from './pages/signup';
 import Cars from './pages/cars';
 import ScrollTop from './pages/scrollTop';
 import CreateAdd from './pages/createAdd';
+import { useState } from "react";
 
 function App() {
+
+  const [user, setUser] = useState(null);
+
+
   return (
     <Router>
       <ScrollTop />
       <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/login' element={<Login />} />
-        <Route exact path='/signup' element={<SignUp />} />
-        <Route exact path="/about" element={<Intro />} />
-        <Route exact path="/cars" element={<Cars />} />
-        <Route exact path="/createAdd" element={<CreateAdd />} />
+        <Route exact path='/' element={<Home data={[user, setUser]} />} />
+        <Route exact path='/login' element={<Login data={[user, setUser]} />} />
+        <Route exact path='/signup' element={<SignUp data={[user, setUser]} />} />
+        <Route exact path="/about" element={<Intro data={[user, setUser]} />} />
+        <Route exact path="/cars" element={<Cars data={[user, setUser]} />} />
+        <Route exact path="/createAdd" element={<CreateAdd data={[user, setUser]} />} />
       </Routes>
     </Router>
   );
