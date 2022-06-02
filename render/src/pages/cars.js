@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import NavigationPublic from 'navigationPublic'
 
 function Cars() {
 
@@ -26,6 +26,7 @@ function Cars() {
 
    return (
       <div>
+         <NavigationPublic />
          {products.map((p) => (
 
             <div key={p.id}>
