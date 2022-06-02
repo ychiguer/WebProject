@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
 
 
 
@@ -17,7 +16,7 @@ function Cars() {
 <div className="card-body">
 <h5 className="card-title">Nothing</h5>
 <p className="card-text"><b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary"style={{marginLeft :"90px"}} >Add to Cart</a>
+<a href="#" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
 </div>
 </div>
 
@@ -27,7 +26,7 @@ function Cars() {
 <div className="card-body">
 <h5 className="card-title">Nothing</h5>
 <p className="card-text"> <b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary" style={{marginLeft :"90px"}}>Add to Cart</a>
+<a href="#" className="btn btn-primary" style={{marginLeft :"90px"}}>Add to Cart</a>
 </div>
 </div>
 
@@ -37,7 +36,7 @@ function Cars() {
 <div className="card-body">
 <h5 className="card-title">Nothing</h5>
 <p className="card-text"><b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
+<a href="#" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
 </div>
 </div>
 
@@ -47,7 +46,7 @@ function Cars() {
 <div className="card-body">
 <h5 className="card-title">Nothing</h5>
 <p className="card-text"><b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
+<a href="#" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
 </div>
 </div>
   
