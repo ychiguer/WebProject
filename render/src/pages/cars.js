@@ -1,62 +1,49 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
-
-
+import NavigationPublic from './navigationPublic'
 
 function Cars() {
- 
-    
-    return (
- <div className='container' style={{ width:"100%", display:"inline-block"}}>
-<div className="row">
-  
 
-<div className="card" style={{ marginLeft:"200px",marginTop : "100px",width: "22rem",backgroundColor : "white"}}>
-<p style={{marginLeft :"90px"}}> <b>Chevrolet Impala</b></p>
-<img className="card-img-top" style={{width : "20rem", height:"15rem"}} src="https://upload.wikimedia.org/wikipedia/commons/0/01/2019_Chevrolet_Malibu_%28facelift%29_LT%2C_front_10.19.19.jpg" alt="Card image cap" />
-<div className="card-body">
-<h5 className="card-title">Nothing</h5>
-<p className="card-text"><b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary"style={{marginLeft :"90px"}} >Add to Cart</a>
-</div>
-</div>
+   const products = [
+      {
+         id: 1,
+         name: "Chevrolet Impala",
+         price: 9900,
+         photo: "https://upload.wikimedia.org/wikipedia/commons/0/01/2019_Chevrolet_Malibu_%28facelift%29_LT%2C_front_10.19.19.jpg"
+      },
+      {
+         id: 2,
+         name: "Bmw",
+         price: 16500,
+         photo: "https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/01/BMW-m4-GTS---Front.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
+      },
+      {
+         id: 3,
+         name: "Mercedes-Benz A-Class Limousine",
+         price: 4500,
+         photo: "https://cdni.autocarindia.com/utils/imageresizer.ashx?n=http://cms.haymarketindia.net/model/uploads/modelimages/Mercedes-Benz-A-Class-Limousine-100420211633.jpg"
+      },
+   ];
 
-<div className="card" style={{ marginLeft:"200px",marginTop : "100px",width: "22rem",backgroundColor : "white"}}>
-<p style={{marginLeft :"90px"}}> <b>Chevrolet Impala</b> </p>
-<img className="card-img-top" style={{width : "20rem", height:"15rem"}} src="https://upload.wikimedia.org/wikipedia/commons/0/01/2019_Chevrolet_Malibu_%28facelift%29_LT%2C_front_10.19.19.jpg" alt="Card image cap" />
-<div className="card-body">
-<h5 className="card-title">Nothing</h5>
-<p className="card-text"> <b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary" style={{marginLeft :"90px"}}>Add to Cart</a>
-</div>
-</div>
+   return (
+      <div>
+         <NavigationPublic />
+         {products.map((p) => (
 
-<div className="card" style={{ marginLeft:"200px",marginTop : "100px",width: "22rem",backgroundColor : "white"}}>
-<p style={{marginLeft :"90px"}}> <b>Chevrolet Impala</b></p>
-<img className="card-img-top" style={{width : "20rem", height:"15rem"}} src="https://upload.wikimedia.org/wikipedia/commons/0/01/2019_Chevrolet_Malibu_%28facelift%29_LT%2C_front_10.19.19.jpg" alt="Card image cap" />
-<div className="card-body">
-<h5 className="card-title">Nothing</h5>
-<p className="card-text"><b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
-</div>
-</div>
-
-<div className="card" style={{ marginLeft:"200px",marginTop : "100px",width: "22rem",backgroundColor : "white"}}>
-<p style={{marginLeft :"90px"}}> <b>Chevrolet Impala</b></p>
-<img className="card-img-top" style={{width : "20rem", height:"15rem"}} src="https://upload.wikimedia.org/wikipedia/commons/0/01/2019_Chevrolet_Malibu_%28facelift%29_LT%2C_front_10.19.19.jpg" alt="Card image cap" />
-<div className="card-body">
-<h5 className="card-title">Nothing</h5>
-<p className="card-text"><b>Price : </b> <hr/>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<a href="/car" className="btn btn-primary"style={{marginLeft :"90px"}}>Add to Cart</a>
-</div>
-</div>
-  
-
- </div>
-  
-   </div>
-            
-);  
+            <div key={p.id}>
+               <div className="card" style={{ marginLeft: "380px", marginTop: "100px", width: "35rem", backgroundColor: "white" }}>
+                  <p style={{ marginLeft: "0px" }}> <b> <center>{p.name}</center> </b></p>
+                  <center> <img className="card-img-top" style={{ width: "25rem", height: "20rem" }} src={p.photo} alt="Card image cap" /> </center>
+                  <div className="card-body">
+                     <h5 className="card-title">Nothing</h5>
+                     <p className="card-text"><b>Price : {p.price} $ </b> </p>
+                     <center><button className="btn btn-primary" style={{ marginLeft: "0px" }} onClick={() => addItem(p)} >Show more</button> </center>
+                  </div>
+               </div>
+            </div>
+         ))}
+      </div>
+   );
 }
 
-export default Cars;
+
+export default Cars; 
